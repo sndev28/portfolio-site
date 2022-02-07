@@ -1,38 +1,57 @@
+
+
+:root {
+  --cursive-font: 'Cedarville Cursive', cursive;
+  --montserrat-font: 'Montserrat', sans-serif;
+  --code-font: 'VT323', monospace;
+  --skills-font: 'Chango', cursive;
+  --accent-light-color: #65FEDA;
+  --accent-color: #326771;
+  --primary-bg: #201A23;
+  --secondary-bg: #2F2E3A;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #2F2E3A;
+
+}
+
+
 .App {
-  text-align: center;
+  scrollbar-color: var(--accent-light-color) var(--primary-bg); 
+  scrollbar-width: thin;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
+
+.container {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
+  background-color: var(--primary-bg);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  scrollbar-color: var(--accent-light-color) var(--primary-bg); 
+  scrollbar-width: thin;
 }
 
-.App-link {
-  color: #61dafb;
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-light-color);
+  border-radius: 4px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

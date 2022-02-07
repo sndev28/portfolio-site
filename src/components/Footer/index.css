@@ -1,0 +1,43 @@
+
+.footer-container {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.footer-container .plate1 {
+    height: 100%;
+    width: 90vw;
+    background-color: var(--accent-light-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewY(30deg);
+    transform-origin: center left;
+}
+
+.footer-container .plate1::before {
+    content: '';
+    height: 100%;
+    width: 90vw;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewY(30deg);
+    transform-origin: center left;
+    box-shadow: 0 0 2px 0 #000;  
+}
+
+.footer-container .plate2 {
+    height: 100%;
+    width: 75vw;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: skewY(-20deg);
+    transform-origin: center right;
+
+}

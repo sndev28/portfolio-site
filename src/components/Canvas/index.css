@@ -1,0 +1,10 @@
+.showcase {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

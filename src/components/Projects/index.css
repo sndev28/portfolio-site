@@ -1,0 +1,109 @@
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 50vh;
+    position: relative;
+    cursor: none;
+}
+
+.projects-container .heading {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.projects-container .ending {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.projects-container .ending div {
+    padding-right: 20%;
+}
+
+.projects-container .heading .part2, .projects-container .ending div {
+    font-family: var(--cursive-font);
+    color: var(--accent-light-color);
+    padding-left: 1ch;
+}
+
+.projects-container .heading .part1 {
+    font-family: var(--montserrat-font);
+    color: var(--accent-color);
+    opacity: 0.6;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.projects-container .projects-panel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+
+}
+
+.projects-container .projects-panel .project-item {
+    /* height: 30vh; */
+}
+
+.robot {
+    position: absolute;
+    top: 0;
+}
+
+.robot svg {
+    width: 100vw;
+    height: 98px;
+}
+
+
+#top-rect, #bottom-rect {
+    width: 100vw;
+}
+
+.card-container .back {
+    width: 50vw;
+    height: calc((9/16)*50vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+}
+
+.card-container .front {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000c;
+    font-family: var(--montserrat-font);
+    color: var(--primary-font-color);
+    display: none;
+}
+
+.card-container .front .card-title {
+    font-size: 36px;
+    font-family: var(--cursive-font);
+}
+
+
+.card-container .front .link {
+    color: white;
+}
+
+
+.project-item:hover > .card-container .back .front{
+    display: flex;
+}

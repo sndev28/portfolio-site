@@ -1,0 +1,127 @@
+
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 50vh;
+    cursor: none;
+}
+
+.skills-container .heading {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.skills-container .ending {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.skills-container .ending div {
+    padding-right: 20%;
+}
+
+.skills-container .heading .part2, .skills-container .ending div, .skills-container .heading .part3 {
+    font-family: var(--cursive-font);
+    color: var(--accent-light-color);
+    padding-left: 1ch;
+}
+
+.skills-container .heading .part1 {
+    font-family: var(--montserrat-font);
+    color: var(--accent-color);
+    opacity: 0.6;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.skills-container .skills-panel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.skills-container .skills-panel .project-item {
+    height: 30vh;
+}
+
+.skills-bg-container {
+    height: 75vh;
+    width: 100vw;
+    font-family: var(--montserrat-font);
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-cursor {
+    --radius: 400px;
+    background-color: #fff;
+    position: absolute;
+    width: var(--radius);
+    height: var(--radius);
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 1;
+    border: 1px solid var(--primary-bg);
+
+}
+
+.skills-cursor-point {
+    --radius: 10px;
+    background-color: #201A23;
+    position: absolute;
+    width: var(--radius);
+    height: var(--radius);
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+
+.inner-text {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.inner-text img {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    right: 20%;
+    top: 55%;
+}
+
+.inner-text #apple-shot {
+    display: none;
+}
+
+
+
+
+.inner-text svg g rect {
+    fill: #fff;
+}
+
+.inner-text svg g rect:hover + text, .inner-text svg g text:hover, .inner-text svg g:hover > text {
+    fill: var(--accent-light-color);
+}
+
+
+.inner-text g {
+    pointer-events: bounding-box;
+}
+

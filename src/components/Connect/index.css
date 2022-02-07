@@ -1,0 +1,253 @@
+
+
+.connect-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 50vh;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.connect-container .social-media {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+
+
+.connect-container .social-media a img {
+    max-width: 100%;
+    min-width: 99.9%;
+    height: auto;
+    background-color: #fff2;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.connect-container .social-media a img{
+    border-radius: 20px;
+}
+
+.connect-container .social-media a:nth-child(odd) {
+    transform: skewY(-30deg);
+}
+
+.connect-container .social-media a:nth-child(even) {
+    transform: skewY(30deg);
+}
+
+
+.connect-container .social-media a:hover > img {
+    transform: translateY(-15px);
+    background-color: #fff;
+
+}
+
+
+.catchy-text {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    transition-duration: 1s;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2vw;
+    font-weight: 900;
+    text-align: center;
+    font-family: var(--montserrat-font);
+    transform: translateY(75%) translateX(6.75%);
+}
+  
+.catchy-text .part1, .catchy-text .part2, .catchy-text .part3, .catchy-text .part4, .catchy-text .part5 {
+    width: calc(75%/5);
+    position: relative;
+    display: flex;
+    height: 10vw;
+    overflow: hidden;
+}
+
+.catchy-text .part5 {
+    width: calc(75% * 2 / 5);
+}
+
+
+.catchy-text div, .catchy-text .part2 div, .catchy-text .part3 div, .catchy-text .part4 div, .catchy-text .part5 div {
+    position: absolute;
+    width: 52vw;
+    transition-duration: 1s;
+}
+
+
+.catchy-text .part1, .catchy-text .part3, .catchy-text .part5 {
+    transform-origin: right bottom;
+    transform: skewY(-30deg);
+    color: var(--primary-font-color);
+}
+
+.catchy-text .part5 {
+    transform-origin: center bottom;
+}
+
+.catchy-text .part2, .catchy-text .part4 {
+    transform-origin: left bottom;
+
+    transform: skewY(30deg);
+    color: var(--accent-light-color);
+}
+
+.catchy-text .part1 div {
+    transform: translateX(0%);
+}
+
+.catchy-text .part2 div {
+    transform: translateX(-21.75%);
+}
+
+.catchy-text .part3 div {
+    transform: translateX(-43.5%);
+}
+
+.catchy-text .part4 div {
+    transform: translateX(-65.25%);
+}
+
+.catchy-text .part5 div {
+    transform: translateX(-87%);
+}
+
+.catchy-text:hover > .part1 div {
+    transform: translateX(16%);
+}
+
+.catchy-text:hover > .part2 div {
+    transform: translateX(-5.75%);
+}
+
+.catchy-text:hover > .part3 div {
+    transform: translateX(-27.5%);
+}
+
+.catchy-text:hover > .part4 div {
+    transform: translateX(-49.25%);
+}
+
+.catchy-text:hover > .part5 div {
+    transform: translateX(-71%);
+}
+
+
+
+.contact-me {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25vh;
+
+}
+
+
+
+
+.contact-box {
+    width: 50%;
+    font-family: var(--montserrat-font);
+    color: var(--secondary-font-color);
+    font-size: 1.25rem;
+    box-shadow: 0 0 10px 0 #0002,
+    0 0 20px 0 #0002,
+    0 0 30px 0 #0002,
+    0 0 40px 0 #0002
+    ;
+    border-radius: 10px;
+}
+
+.contact-box .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--accent-light-color);
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contact-box .top-bar .bar-title {
+    display: block;
+}
+
+.contact-box .top-bar .control-buttons {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-box .contact-window {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff7;
+    backdrop-filter: blur(40px);
+    padding: 2.5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.contact-box .contact-window .contact-window-details {
+    padding-top: 2.5%;
+}
+
+
+.contact-window .name, .contact-window .email {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-window .name .fname, .contact-window .name .lname, .contact-window .email {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 5%;
+}
+
+
+.contact-window .name .fname input, .contact-window .name .lname input {
+    font-size: 18px;
+}
+
+
+.contact-window .email input {
+    width: 60%;
+    font-size: 18px;
+
+}
+
+.contact-window .name .fname label, .contact-window .name .lname label, .contact-window .email label {
+    margin-right: 10px;
+}
+
+.contact-window .message {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-window .message textarea {
+    resize: vertical;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
